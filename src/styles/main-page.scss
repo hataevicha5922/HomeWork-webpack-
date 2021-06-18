@@ -1,0 +1,30 @@
+@import './colors.scss';
+@import './classes.scss';
+
+.main-content {
+  padding: 30px;
+  background-color: rgb(218, 212, 212);
+  height: 90vh;
+  &__post-form {
+    @extend %bordered-block;
+    width: 50%;
+    margin: 0 auto;
+
+    padding: 15px;
+    background-color: $no_bgc;
+  }
+  &__posts {
+    @extend %bordered-block;
+    margin: 20px auto;
+    min-height: 20px;
+    width: 90%;
+
+    &-post {
+      background-color: $no_bgc;
+      @extend %bordered-block;
+      width: 50%;
+      min-height: 20px;
+      margin: 20px 10px;
+    }
+  }
+}
